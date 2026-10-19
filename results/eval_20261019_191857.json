@@ -1,0 +1,191 @@
+{
+  "model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "started": "2026-10-19 19:03:34",
+  "modes": {
+    "multi": {
+      "passed": 5,
+      "total": 5,
+      "rows": [
+        {
+          "test": 1,
+          "query": "Створи плейлист з 5 пісень Radiohead без live-версій, назви його Radiohead Essentials",
+          "passed": true,
+          "reason": "5 треків Radiohead без live",
+          "run_id": "64fc78e6",
+          "verdict": {
+            "verdict": "done",
+            "playlist": "Radiohead Essentials",
+            "tracks_in_playlist": 5,
+            "note": "Плейлист Radiohead Essentials успішно створено з 5 треками."
+          },
+          "seconds": 41.8,
+          "llm_calls": 5,
+          "tool_calls": 3,
+          "tool_errors": 0
+        },
+        {
+          "test": 2,
+          "query": "Створи плейлист з 5 пісень Radiohead без live-версій, назви його Radiohead Essentials",
+          "passed": true,
+          "reason": "конфлікт назви оброблено, створено (2)",
+          "run_id": "82c4236e",
+          "verdict": {
+            "verdict": "done",
+            "playlist": "Radiohead Essentials (2)",
+            "tracks_in_playlist": 5,
+            "reason": "",
+            "note": "Плейлист Radiohead Essentials (2) успішно створено з 5 треками Radiohead без live-версій."
+          },
+          "seconds": 54.0,
+          "llm_calls": 6,
+          "tool_calls": 4,
+          "tool_errors": 1
+        },
+        {
+          "test": 3,
+          "query": "Створи плейлист French Touch: 3 треки Daft Punk і 3 треки Justice, без реміксів",
+          "passed": true,
+          "reason": "3 Daft Punk + 3 Justice без реміксів",
+          "run_id": "6b8f2d42",
+          "verdict": {
+            "verdict": "done",
+            "playlist": "French Touch",
+            "tracks_in_playlist": 6,
+            "reason": "",
+            "note": "Плейлист French Touch успішно створено з 6 треками."
+          },
+          "seconds": 50.0,
+          "llm_calls": 6,
+          "tool_calls": 4,
+          "tool_errors": 0
+        },
+        {
+          "test": 4,
+          "query": "Додай 2 пісні Massive Attack у мій плейлист French Touch",
+          "passed": true,
+          "reason": "дописано 2 треки Massive Attack",
+          "run_id": "b95574d3",
+          "verdict": {
+            "verdict": "done",
+            "playlist": "French Touch",
+            "tracks_in_playlist": 8,
+            "reason": "",
+            "note": "Додано 2 треки Massive Attack до плейлиста French Touch."
+          },
+          "seconds": 75.4,
+          "llm_calls": 6,
+          "tool_calls": 4,
+          "tool_errors": 0
+        },
+        {
+          "test": 5,
+          "query": "Створи плейлист з 10 пісень гурту Xqzzyt Brothers",
+          "passed": true,
+          "reason": "нічого не створено",
+          "run_id": "9f5cd2a5",
+          "verdict": {
+            "verdict": "impossible",
+            "playlist": "",
+            "tracks_in_playlist": 0,
+            "reason": "No tracks found for artist 'Xqzzyt Brothers'; artist may not exist or name is misspelled.",
+            "note": "Вибачте, не вдалося знайти треків для цього виконавця."
+          },
+          "seconds": 25.1,
+          "llm_calls": 3,
+          "tool_calls": 1,
+          "tool_errors": 1
+        }
+      ]
+    },
+    "single": {
+      "passed": 4,
+      "total": 5,
+      "rows": [
+        {
+          "test": 1,
+          "query": "Створи плейлист з 5 пісень Radiohead без live-версій, назви його Radiohead Essentials",
+          "passed": true,
+          "reason": "5 треків Radiohead без live",
+          "run_id": "a1edb80e",
+          "verdict": {
+            "verdict": "done",
+            "playlist": "Radiohead Essentials",
+            "tracks_in_playlist": 5,
+            "reason": "",
+            "note": "Плейлист Radiohead Essentials успішно створено з 5 треками."
+          },
+          "seconds": 26.2,
+          "llm_calls": 4,
+          "tool_calls": 3,
+          "tool_errors": 0
+        },
+        {
+          "test": 2,
+          "query": "Створи плейлист з 5 пісень Radiohead без live-версій, назви його Radiohead Essentials",
+          "passed": true,
+          "reason": "конфлікт назви оброблено, створено (2)",
+          "run_id": "d48a8287",
+          "verdict": {
+            "verdict": "done",
+            "playlist": "Radiohead Essentials (2)",
+            "tracks_in_playlist": 5,
+            "reason": "",
+            "note": "Плейлист Radiohead Essentials (2) успішно створено з 5 треками без live-версій."
+          },
+          "seconds": 47.4,
+          "llm_calls": 5,
+          "tool_calls": 4,
+          "tool_errors": 1
+        },
+        {
+          "test": 3,
+          "query": "Створи плейлист French Touch: 3 треки Daft Punk і 3 треки Justice, без реміксів",
+          "passed": true,
+          "reason": "3 Daft Punk + 3 Justice без реміксів",
+          "run_id": "5d6f9d7e",
+          "verdict": {
+            "verdict": "done",
+            "playlist": "French Touch",
+            "tracks_in_playlist": 6,
+            "reason": "",
+            "note": "Плейлист French Touch успішно створено з 3 треками Daft Punk і 3 треками Justice без реміксів."
+          },
+          "seconds": 58.3,
+          "llm_calls": 5,
+          "tool_calls": 4,
+          "tool_errors": 0
+        },
+        {
+          "test": 4,
+          "query": "Додай 2 пісні Massive Attack у мій плейлист French Touch",
+          "passed": false,
+          "reason": "всього=6, Massive Attack=0 (треба 8 і 2)",
+          "run_id": "d0672090",
+          "verdict": {
+            "verdict": "crash",
+            "reason": "RuntimeError: LLM недоступна: вичерпано повтори (ліміт OpenRouter або перевантаження)."
+          },
+          "seconds": 246.1,
+          "llm_calls": 2,
+          "tool_calls": 2,
+          "tool_errors": 0
+        },
+        {
+          "test": 5,
+          "query": "Створи плейлист з 10 пісень гурту Xqzzyt Brothers",
+          "passed": true,
+          "reason": "нічого не створено",
+          "run_id": "346b4488",
+          "verdict": {
+            "verdict": "crash",
+            "reason": "RuntimeError: LLM недоступна: вичерпано повтори (ліміт OpenRouter або перевантаження)."
+          },
+          "seconds": 233.1,
+          "llm_calls": 0,
+          "tool_calls": 0,
+          "tool_errors": 0
+        }
+      ]
+    }
+  }
+}
